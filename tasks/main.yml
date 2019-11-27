@@ -1,0 +1,23 @@
+---
+
+# Install
+- import_tasks: install.yml
+  tags:
+    - manala_nginx
+
+# Config
+- import_tasks: config.yml
+  tags:
+    - manala_nginx
+
+# Configs
+- import_tasks: configs.yml
+  tags:
+    - manala_nginx
+
+# Services
+- import_tasks: services.yml
+  tags:
+    - manala_nginx
+    - manala_nginx.services
+    - manala.services
